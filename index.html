@@ -1,3 +1,5 @@
+<!-- @ 18 minutes https://www.youtube.com/watch?v=C7NsIRhoWuE-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +15,41 @@
 </head>
 <body>
     <h1><font color="red">Trivia Game</font></h1>
+
+    <form id = "quiz" name = "quiz">
+          
+          <!-- Fill in th blank question -->
+            <p>This will be the first question?</p>
+                <input id = "textbox" type="text" name = "question1">
+            <!-- Mult choice question -->
+            <p>What is Harry Potter?</p>
+                <input id = "mc"      type="radio" name = "question2" value = "A Wizard"> A Wizard <br>
+                <input id = "mc"      type="radio" name = "question2" value = "A Dragon"> A Dragon <br>
+                <input id = "mc"      type="radio" name = "question2" value = "A Wizard"> A Muggle <br>
+            <p>What do they call Hermoine?</p>
+                <input id = "mc"      type="radio" name = "question3" value = "A Wizard"> A Wizard <br>
+                <input id = "mc"      type="radio" name = "question3" value = "A Mudblood"> A Mudblood <br>
+                <input id = "mc"      type="radio" name = "question3" value = "A Phoenix"> A Phoenix <br>
+            <p>What color is Ron's hair?</p>
+                <input id = "mc"      type="radio" name = "question4" value = "Purple"> Purple <br>
+                <input id = "mc"      type="radio" name = "question4" value = "Blonde"> Blonde <br>
+                <input id = "mc"      type="radio" name = "question4" value = "Red"> Red <br>
+            <p>What does harry have on his forehead?</p>
+                <input id = "mc"      type="radio" name = "question5" value = "Freckles"> Freckles <br>
+                <input id = "mc"      type="radio" name = "question5" value = "A Scar"> A Scar <br>
+                <input id = "mc"      type="radio" name = "question5" value = "Acne"> Acne <br>                                                 
+            <input id = "button"   type="button" value = "Submit" onclick = "check();">
+
+            <div id = "afterSubmit">
+            <p id ="numberCorrect"> </p>
+
+            </div>
+        
+        
+      </form>
+
+
+      
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="assets/java/trivia.js"></script>
