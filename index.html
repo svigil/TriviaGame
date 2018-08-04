@@ -14,8 +14,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <h1><font color="red">Trivia Game</font></h1>
+<div class = container>
+        <div class="row">
+            <div class="col-md-12">
+    <center><h1><font color="darkgreen">Easy Harry Potter Trivia</font></h1></center>
+</div>
+</div>
+<div class = container>
+        <div class="row">
+            <div class="col-md-12">
+        <center><button id="startButton">Click here to begin</button>
+        <h2 class="hidden">Time remaining: <span id="timeLeft"></span> seconds</h2></center>
+</div>
+</div>
 
+
+<div class = container>
+    <div class="row">
+        <div class="col-md-9">
     <form id = "quiz" name = "quiz">
           
           <!-- Fill in th blank question -->
@@ -39,17 +55,22 @@
                 <input id = "mc"      type="radio" name = "question5" value = "A Scar"> A Scar <br>
                 <input id = "mc"      type="radio" name = "question5" value = "Acne"> Acne <br>                                                 
             <input id = "button"   type="button" value = "Submit" onclick = "check();">
-
-    </form>  
-            
+        </div>
+    </form> 
+        <div class="col-md-2">
             <div id = "afterSubmit">
             
                 <p id ="numberCorrect"></p>
                 <p id ="message"></p>
                 <img id = "picture">
-            
-            </div>
         
+        </div>
+            
+        </div>
+    </div>
+            
+    </div>
+    </div>
       
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
